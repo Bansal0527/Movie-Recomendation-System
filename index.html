@@ -1,1 +1,523 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics of Machine Learning </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <nav class="top-navbar navbar fixed-top navbar-expand navbar-light bg-white">
+        <div class="container">
+            <!-- <a class="logo icon-logo navbar-brand mx-md-auto mx-lg-auto mx-xl-auto" href="#">Movie Recommendation System</a>// -->
+        </div>
+    </nav>
+
+
+    <main class="container">
+        <article>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="font-weight-bold mt-4">Movie Recommendation System</h1>
+                    <p class="text-secondary h4"></p>
+                    </p>
+                    <img class="img-fluid my-4" src="assets/images/maini.png">
+                    <!-- <p>There’s much new in the world of <a href="ded.html">Progressive Web Apps</a> (PWAs) and you might be wondering
+                        how compatible they are with existing architectures using libraries like <a href="#">React</a> and
+                        JS module bundlers like
+                        <a href="#">Webpack</a>. Does a PWA require a wholesale rewrite? What web performance metrics do
+                        you need to keep an eye on? In this series of posts I’ll share my experience turning React-based
+                        web apps into PWAs. We’ll also cover why shipping just what users need for a route & throwing out
+                        all other scripts are good ideas for fast perf.</p> -->
+                </div> 
+                <!-- <p>Yaha pr text aa sakta hai intro types and usme links daal skte hai</p> -->
+            </div>
+            </div>
+
+
+
+            <h1 class="font-weight-bold mt-4">Collaborative Filtering</h1>
+            <section class="mt-5">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="font-weight-bold">K Nearest Neighbors</h2>
+                    <p>In machine learning, KNN (K-Nearest Neighbors) plays an important role in classification and regression tasks.
+                        The major challenge when using KNN is choosing the right (best) value for k which is the number of neighbor instances considered for a new-instance classification.
+                        In technical terms, k is a hyperparameter in the KNN algorithm. The user needs to define its best value, as it can't learn the value from the input data.</p>
+                </div>
+                </div>
+                <div class="row justify-content-center">
+                    <figure class="figure">
+                        <img class="figure-img img-fluid col-12" src="assets/images/knn.png">
+                        <figcaption class="figure-caption text-center"><small>K-NN in visualisation</small></figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h4 class="font-weight-bold">Advantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Simple to implement</b></li>
+                            <li class="mt-3"><b>Robust to noisy training data.</b></li>
+                            <li class="mt-3"><b>Can be more effective with a large training dataset</b></li>
+                            <li class="mt-3"><b>Robust to noise and outliers if a large enough k is used</b>.</li>
+                        </ul>
+                        <h4 class="font-weight-bold">Disadvantages :</h4>
+                        <ul>
+                            <li class="mt-3"><b>Determining the value of k can be complex</b></li>
+                            <li class="mt-3"><b>High computation cost due to calculating the distance between data points for all training samples.</b></li>
+                            <li class="mt-3"><b>Slow algorithm, especially with large datasets.</b></li>
+                            <li class="mt-3"><b>Sensitive to the local structure of the data, which may lead to overfitting.</b></li>
+                        </ul>
+            
+
+
+            
+            <section class="mt-5">
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h2 class="font-weight-bold">K Means Clustering</h2>
+                        <!-- <p>Let’s begin with a PWA checklist. For this we’ll be using <a href="#" class="font-weight-bold">Lighthouse</a> — a
+                            tool for auditing <a href="#">an app for PWA features</a> and checking your app meets a respectable
+                            bar for web performance under emulated mobile conditions. Lighthouse is available as a <a href="#">Chrome extension</a>                            (I use this version of it most often) and a <a href="#">CLI</a>, both of which present a report
+                            that looks a little like this:</p>
+                    </div> -->
+                    <p> K-means clustering is one of the simplest and popular unsupervised machine learning algorithms.The objective of K-means is simple: group similar data points together and discover underlying patterns. To achieve this objective, K-means looks for a fixed number (k) of clusters in a dataset.The K-means algorithm starts with a first group of randomly selected centroids, which are used as the beginning points for every cluster, and then performs iterative (repetitive) calculations to optimize the positions of the centroids.</p>
+                <!-- </div> -->
+                </div>
+                <div class="row justify-content-center">
+                    <figure class="figure">
+                        <img class="figure-img img-fluid col-12" src="assets/images/kmeans.png">
+                        <figcaption class="figure-caption text-center"><small>K Means Clustering in visualisation</small></figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <!-- <section class="col-lg-8 mx-auto"> -->
+                        <h4 class="font-weight-bold">Advantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Simple to implement.</b></li>
+                            <li class="mt-3"><b>It is scalable to a huge data set and also faster to large datasets.</b></li>
+                            
+                            <li class="mt-3"><b>Easily adapts to new examples.</b></li>
+                        </ul>
+                        <h4 class="font-weight-bold">Disadvantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Choosing k manually is a tough job.</b></li>
+                            <li class="mt-3"><b>As the number of dimensions increases its scalability decreases.</b></li>
+                            <li class="mt-3"><b>It is sensitive to outliers.</b></li>
+                            
+                        </ul>
+
+
+
+
+
+            </section>
+            <section class="mt-5">
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h2 class="font-weight-bold">Logistic Regression Model</h2>
+                    <!-- </div> -->
+                    <p> Logistic regression is a statistical method for analyzing a dataset in which there are one or more independent variables that determine an outcome. The outcome is measured with a dichotomous variable (in which there are only two possible outcomes). The goal of logistic regression is to find the best fitting model to describe the relationship between the dichotomous characteristic of interest (dependent variable) and a set of independent (predictor or explanatory) variables. </p>
+                </div>
+                <div class="row justify-content-center">
+                    <figure class="figure">
+                        <img class="figure-img img-fluid col-12" src="assets/images/logistic_regression.png">
+                        <figcaption class="figure-caption text-center"><small>Logistic Regression Model Visualization</small></figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <!-- <section class="col-lg-8 mx-auto"> -->
+                        <h4 class="font-weight-bold">Advantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Simple to understand and interpret.</b></li>
+                            <li class="mt-3"><b>Efficient for binary classification problems.</b></li>
+                            <li class="mt-3"><b>Can handle both numerical and categorical data.</b></li>
+                        </ul>
+                        <h4 class="font-weight-bold">Disadvantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Assumes a linear relationship between independent variables and the log-odds of the dependent variable.</b></li>
+                            <li class="mt-3"><b>May perform poorly with outliers or irrelevant features.</b></li>
+                            <li class="mt-3"><b>Not suitable for complex relationships between variables.</b></li>
+                        </ul>
+                </div>
+            </section>
+            
+
+            <section class="mt-5">
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h2 class="font-weight-bold">Singular Value Decomposition (SVD)</h2>
+                    <!-- </div> -->
+                    <p> Singular Value Decomposition is a method used to decompose a matrix into three other matrices such that when these matrices are multiplied, they approximate the original matrix. It is widely used in dimensionality reduction, data compression, and solving linear equations. SVD is especially useful in data analysis and machine learning for tasks like collaborative filtering, image compression, and feature extraction.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <figure class="figure">
+                        <!-- <img class="figure-img img-fluid col-12" src="assets/images/svd_visualization.png"> -->
+                        <!-- <figcaption class="figure-caption text-center"><small>Singular Value Decomposition (SVD) Visualization</small></figcaption> -->
+                    </figure>
+                </div>
+                <div class="row">
+                    <!-- <section class="col-lg-8 mx-auto"> -->
+                        <h4 class="font-weight-bold">Advantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Provides a compact representation of the original matrix.</b></li>
+                            <li class="mt-3"><b>Useful for dimensionality reduction without significant loss of information.</b></li>
+                            <li class="mt-3"><b>Helps in identifying and removing noise from data.</b></li>
+                        </ul>
+                        <h4 class="font-weight-bold">Disadvantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Computational complexity increases with the size of the matrix.</b></li>
+                            <li class="mt-3"><b>Interpretability of the decomposed matrices may not always be straightforward.</b></li>
+                            <li class="mt-3"><b>May not work well with matrices that are sparse or have irregular patterns.</b></li>
+                        </ul>
+                </div>
+            </section>
+            
+
+            <section class="mt-5">
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h2 class="font-weight-bold">Naive Bayes</h2>
+                        
+                    </div> 
+                    <p>The Naïve Bayes classifier is a supervised machine learning algorithm that is used for classification tasks such as text classification. They use principles of probability to perform classification tasks.
+                        Naïve Bayes is also known as a probabilistic classifier since it is based on Bayes’ Theorem.
+                        This model predicts the probability of an instance belongs to a class with a given set of feature value. It is a probabilistic classifier. It is because it assumes that one feature in the model is independent of existence of another feature. In other words, each feature contributes to the predictions with no relation between each other. In real world, this condition satisfies rarely. 
+
+                    </p>
+                <!-- </div> -->
+                </div>
+                <h2>Conditional Probability Formula:</h2>
+                <br/>
+                </div>
+                <div>
+                
+                        \[
+                        P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
+                        \]
+                    <br/>
+                    <p>where:</p>
+                    <ul>
+                        <li>\( P(A|B) \) is the conditional probability of event \( A \) given \( B \)</li>
+                        <li>\( P(B|A) \) is the conditional probability of event \( B \) given \( A \)</li>
+                        <li>\( P(A) \) is the prior probability of event \( A \)</li>
+                        <li>\( P(B) \) is the prior probability of event \( B \)</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h4 class="font-weight-bold">Advantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Handles categorical input well: Naive Bayes is particularly effective when dealing with categorical input variables, which are common in many real-world applications.
+                            </b></li>
+                            <li class="mt-3"><b>Works well with imbalanced datasets: Naive Bayes can handle imbalanced datasets effectively, as it does not rely on the presence of a large number of instances of each class.</b></li>
+                            <li class="mt-3"><b>Naive Bayes is a straightforward algorithm that requires minimal computational resources and can be easily understood and implemented.</b></li>
+                        </ul>
+                        <h4 class="font-weight-bold">Disadvantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>The algorithm may not perform well with continuous data, as it requires the data to be discretized, which can lead to information loss..</b></li>
+                            <li class="mt-3"><b>Naive Bayes is not well-suited for problems with complex decision boundaries, as it assumes a simple, linear relationship between the features and the target variable.<b></li>
+                            <li class="mt-3"><b>The algorithm does not account for interactions between features, which can be important in some applications..</b></li>
+                        </ul>
+
+
+        
+            <section class="mt-5">
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h2 class="font-weight-bold">Support Vector Machine (SVM)</h2>
+                        
+                    </div> 
+                    <p>Support Vector Machine (SVM) is a powerful machine learning algorithm used for linear or nonlinear classification, regression, and even outlier detection tasks. SVMs can be used for a variety of tasks, such as text classification, image classification, spam detection, handwriting identification, gene expression analysis, face detection, and anomaly detection. SVMs are adaptable and efficient in a variety of applications because they can manage high-dimensional data and nonlinear relationships.
+
+                        SVM algorithms are very effective as we try to find the maximum separating hyperplane between the different classes available in the target feature.
+                    </p>
+                <!-- </div> -->
+                </div>
+                <div class="row justify-content-center">
+                    <figure class="figure">
+                        <img class="figure-img img-fluid col-12" src="assets/images/SVM.png">
+                        <!-- <figcaption class="figure-caption text-center"><small>Linear Regression in visualisation</small></figcaption> -->
+                    </figure>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h4 class="font-weight-bold">Advantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>SVM can be used to solve both classification and regression problems.</b></li>
+                            <li class="mt-3"><b>SVM can handle data like text, images, and trees effectively.</b></li>
+                            <li class="mt-3"><b>SVM only needs to store a subset of the training data (support vectors), making it memory efficient.</b></li>
+                        </ul>
+                        <h4 class="font-weight-bold">Disadvantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>SVMs handle the dataset as a whole at once, requiring the whole data to be taken to the RAM of a computer during training.</b></li>
+                            <li class="mt-3"><b>SVM models can be less interpretable compared to other machine learning models, such as decision trees.<b></li>
+
+                        </ul>
+
+
+
+            <section class="mt-5">
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h2 class="font-weight-bold">Linear Kernel</h2>
+                        
+                    </div> 
+                    <p>A linear kernel is a specific type of kernel function used in machine learning, particularly in the context of support vector machines (SVMs) and kernel methods. It is used to transform non-linearly separable data into a higher-dimensional space where it becomes linearly separable.
+                    </p>
+                <!-- </div> -->
+                </div>
+                <div class="row justify-content-center">
+                    <figure class="figure">
+                        <img class="figure-img img-fluid col-12" src="assets/images/LinearKernal.png">
+                        <!-- <figcaption class="figure-caption text-center"><small>Linear Regression in visualisation</small></figcaption> -->
+                    </figure>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h4 class="font-weight-bold">Advantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>When the relationship between independent and dependent variables is known to be linear, the Linear Kernel is the best choice due to its lower complexity compared to other algorithms.</b></li>
+                            <li class="mt-3"><b>Over-fitting can be avoided in Linear Kernel methods using techniques like dimensionality reduction, regularization, and cross-validation.</b></li>
+                            
+                        </ul>
+                        <h4 class="font-weight-bold">Disadvantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Linear Kernel methods assume a linear relationship between dependent and independent variables, which may not always be accurate.</b></li>
+                            <li class="mt-3"><b>Linear Kernel methods might not perform well with non-linear datasets, as they are designed for linearly separable data.<b></li>
+
+                        </ul>
+             
+                        
+
+            <section class="mt-5">
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h2 class="font-weight-bold">Polynomial Kernel</h2>
+                        
+                    <p>In machine learning, the polynomial kernel is a kernel function commonly used with support vector machines (SVMs) and other kernelized models, that represents the similarity of vectors (training samples) in a feature space over polynomials of the original variables, allowing learning of non-linear models.
+                    </p>
+                <!-- </div> -->
+                </div>
+                <div class="row justify-content-center">
+                    <figure class="figure">
+                        <img class="figure-img img-fluid col-12" src="assets/images/Poly kernel.png">
+
+                    </figure>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h4 class="font-weight-bold">Advantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>They allow learning of non-linear models by representing the similarity of vectors in a feature space over polynomials of the original variables.</b></li>
+                            <li class="mt-3"><b>Polynomial kernels can capture complex relationships between features, making them suitable for problems with non-linear decision boundaries.</b></li>
+                        </ul>
+                        <h4 class="font-weight-bold">Disadvantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Polynomial kernels may not perform well when the training data is not normalized, as they can be sensitive to the scale of the input features.</b></li>
+                            <li class="mt-3"><b>Choosing the appropriate degree of the polynomial can be challenging, as a higher degree may lead to overfitting, while a lower degree may not capture the complexity of the data.</b></li>
+                            
+                        </ul>
+
+                  </section>
+
+                  <section class="mt-5">
+                    <div class="row">
+                        <!-- <div class="col-lg-8 mx-auto"> -->
+                            <h2 class="font-weight-bold">Random Forest</h2>
+                        <!-- </div> -->
+                        <p> Random Forest is an ensemble learning method that constructs a multitude of decision trees during training and outputs the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees. It is one of the most versatile and widely used machine learning algorithms, known for its high accuracy, robustness, and ability to handle large datasets with high dimensionality. Random Forest can be applied to both classification and regression tasks across various domains.</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <figure class="figure">
+                            <img class="figure-img img-fluid col-12" src="assets/images/random_forest.png">
+                            <figcaption class="figure-caption text-center"><small>Random Forest Visualization</small></figcaption>
+                        </figure>
+                    </div>
+                    <div class="row">
+                        <!-- <section class="col-lg-8 mx-auto"> -->
+                            <div>
+                            <h4 class="font-weight-bold">Advantages:</h4>
+                            <ul>
+                                <li class="mt-3"><b>Highly accurate and robust due to the ensemble of decision trees.</b></li>
+                                <li class="mt-3"><b>Handles both categorical and numerical data.</b></li>
+                                <li class="mt-3"><b>Automatically handles missing values and maintains accuracy for missing data.</b></li>
+                            </ul>
+                            <h4 class="font-weight-bold">Disadvantages:</h4>
+                            <ul>
+                                <li class="mt-3"><b>Complexity and computational overhead due to the construction of multiple decision trees.</b></li>
+                                <li class="mt-3"><b>May overfit noisy data if not properly tuned.</b></li>
+                                <li class="mt-3"><b>Less interpretable compared to simpler models like decision trees.</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+            <section class="mt-5">
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <h2 class="font-weight-bold">RBF Kernel</h2>
+                        
+                    <p>The Radial Basis Function (RBF) kernel is a popular kernel function used in Support Vector Machines (SVMs) for classification and regression tasks. It is a non-linear kernel that transforms input data into a higher-dimensional space, where it becomes linearly separable. The RBF kernel computes the similarity between two data points based on the Euclidean distance between them, using a Gaussian function. Mathematically, the RBF kernel can be expressed as exp(-γ * ||x - x'||^2), where γ is a hyperparameter that controls the kernel's smoothness and ||x - x'||^2 is the squared Euclidean distance between the input vectors x and x'. </p>
+                <!-- </div> -->
+                </div>
+                <div class="row justify-content-center">
+                    <figure class="figure">
+                        <img class="figure-img img-fluid col-12" src="assets/images/Poly kernel.png">
+
+                    </figure>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto"> -->
+                        <div>
+                        <h4 class="font-weight-bold">Advantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Non-linearity for complex data.</b></li>
+                            <li class="mt-3"><b>Versatility across various applications.</b></li>
+                            <li class="mt-3"><b>Captures local patterns effectively.</b></li>
+                        </ul>
+                        <h4 class="font-weight-bold">Disadvantages:</h4>
+                        <ul>
+                            <li class="mt-3"><b>Hyperparameter tuning complexity.</b></li>
+                            <li class="mt-3"><b>Prone to overfitting.</b></li>
+                            <li class="mt-3"><b>High computational cost for large datasets.</b></li>
+                            
+                        </ul>
+                    </div>
+            
+                        
+            
+            
+                    <div class="col-lg-8 mx-auto mt-4">
+                        <button type="button" class="btn btn-light btn-sm">KNN</button>
+                        <button type="button" class="btn btn-light btn-sm">Kmeans</button>
+                        <button type="button" class="btn btn-light btn-sm">Naive Bayes</button>
+                        <button type="button" class="btn btn-light btn-sm">Random Forrest</button>
+                        <button type="button" class="btn btn-light btn-sm">Movie Recommendation System</button>
+                        <hr class="mt-4">
+                    </div>
+                <!-- </div> -->
+            </section > 
+             
+            <div class="d-flex flex-column mb-4 custom">
+                <div class="custom">
+                <div class="row justify-content-center mb-4 flex-column">
+                    <div class="float-left ml-4">
+                        <img  height="70" src="assets/images/parth.jpeg" alt="Addy Osmani">
+                    </div>
+                    <div class="col-6 ml-2">
+                        <div class="row">
+                            <h5><a class="text-dark font-weight-bold" href="#">Parth Darshan</a></h5>
+                        </div>
+                        <a href="https://www.linkedin.com/in/parth-darshan-58775424b/"> <i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/b22cse040"> <i class="fab fa-github"></i></a>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="row justify-content-center mb-4 flex-column">
+                    <div class="float-left ml-4">
+                        <img  height="70" src="assets/images/rakshit.jpeg" alt="Addy Osmani">
+                    </div>
+                    <div class="col-6 ml-2">
+                        <div class="row">
+                            <h5><a class="text-dark font-weight-bold" href="#">Rakshit Singhal</a></h5>
+                        </div>
+                        <a href="https://linkedin.com/in/rakshit1134"> <i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/rakshitx1"> <i class="fab fa-github"></i></a>
+                     
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="row justify-content-center mb-4 flex-column">
+                    <div class="float-left ml-4">
+                        <img  height="70" src="assets/images/akarsh.jpeg" alt="Addy Osmani">
+                    </div>
+                    <div class="col-6 ml-2">
+                        <div class="row">
+                            <h5><a class="text-dark font-weight-bold" href="#">Akarsh Katiyar</a></h5>
+                        </div>
+                       <a href="https://www.linkedin.com/in/akarsh-katiyar-105b472a8/"> <i class="fab fa-linkedin"></i></a>
+                       <a href="https://github.com/aakarsh-kt"> <i class="fab fa-github"></i></a>
+                        
+                    </div>
+                    
+                </div>
+
+
+                <div class="row justify-content-center mb-4 flex-column">
+                    <div class="float-left ml-4">
+                        <img  height="70" src="assets/images/mayank.jpeg" alt="Addy Osmani">
+                    </div>
+                    <div class="col-6 ml-2">
+                        <div class="row">
+                            <h5><a class="text-dark font-weight-bold" href="#">Mayank Bansal</a></h5>
+                        </div>
+                        <a href="https://www.linkedin.com/in/mayank-bansal-5650b0251/"> <i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Bansal0527"> <i class="fab fa-github"></i></a>
+                       
+                    </div>
+                    
+                </div>
+
+                <div class="row justify-content-center mb-4 flex-column">
+                    <div class="float-left ml-4">
+                        <img  height="70" src="assets/images/palash.jpeg" alt="Palash Khatod">
+                    </div>
+                    <div class="col-6 ml-2">
+                        <div class="row">
+                            <h5><a class="text-dark font-weight-bold" href="#">Palash Kathod</a></h5>
+                        </div>
+                        <a href="https://www.linkedin.com/in/palash-khatod-19605425a/"> <i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/palash-kh"> <i class="fab fa-github"></i></a>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="row justify-content-center mb-4 flex-column ">
+                    <div class="float-left ml-4">
+                        <img  height="70" src="assets/images/ram.jpeg" alt="Ram Prasad">
+                    </div>
+                    
+                    <div class="col-6 ml-2">
+                        <div class="row">
+                            <h5><a class="text-dark font-weight-bold" href="#">Ram Prasad</a></h5>
+                        </div>
+                        
+                        <a href="https://www.linkedin.com/in/ram-prasad-a66337259/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Ramjat19"><i class="fab fa-github"></i></a>
+                    
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+               </div>
+            </section>
+        </article>
+    </main>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
