@@ -35,7 +35,7 @@ The analysis is structured into three main sections:
 
 The analysis provides valuable insights into the strengths, limitations, and real-world applicability of various traditional machine learning techniques for movie recommendation systems. Key findings include the computational efficiency of Random Forest and Naive Bayes, the capability of certain methods to mitigate the cold-start problem partially, and the effectiveness of linear and RBF kernels in capturing genre similarities and providing diverse recommendations.
 
-Please refer to the [LaTeX report](Report.pdf) for detailed information, including methodology, results, and analysis.
+Please refer to the [report](Report.pdf) for detailed information, including methodology, results, and analysis.
 
 ## Running the Scripts
 
